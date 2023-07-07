@@ -1,0 +1,18 @@
+body{
+    background-color: darkgrey;
+}
+#filmlist{
+    display: none;
+}
+
+#details{
+    font-size: 20px;
+}
+
+#image{
+    width: 400px;
+}
+
+#menu:hover{
+    color: brown;
+}
