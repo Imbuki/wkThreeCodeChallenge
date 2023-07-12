@@ -1,46 +1,45 @@
-# wkThreeCodeChallenge
-# Flatdango
 
-## Table of content
-* Installation requirement
-* Technology used
-* Licence
-* Authors info
+# Movie Ticket Booking App
 
-## Index.css
-Used it to syle the main box,character list box and the character details box.
+This is a JavaScript application that allows users to browse and book movie tickets. It fetches movie data from a JSON file and dynamically updates the movie details based on user selection. The application also keeps track of available tickets and updates the ticket count when a user purchases a ticket.
 
-## Index.js 
-First fetch this `"http://localhost:3000/characters")`at then make the db.json file into an object which will return the characters. We then call the function "displayCharacterNames" that will receive the characters array as argument and process it to display the names in html.
+## Prerequisites
 
-Inside the function `displayCharacterNames` we loop through the characters array using `forEach` and for every character object an `li` HTML element is created. The character name is enclosed inside the `a` added to the `li` element using `innerHTML` attribute.
-Event listeners are added that will listen for a click event on the `li` element and inside the callback function the elements displaying character details are retrieved using `getElementById` and the content is changed to match the current clicked character.
-Lastly we add the `li` element using `appendChild` function to the `ul` element we retrieved earlier. And this will run for every character
+Before running the application, make sure you have the following:
 
-Another function is created called `addVotes` which adds an event listener to the form element and a callback funciton will be triggered when submit event occurs.
-Inside the callback function, we first prevent the default behavior during submit. The value from the votes input is obtained then used to change the content on the element display votes details. When that is done, we clear the value from the votes input by setting its value attribute to empty string
-The last line will call the `addVotes` function.
+- Web browser with JavaScript enabled
+- JSON file containing movie data
+- Web server to host the JSON file (e.g., Apache, Nginx)
 
-# INSTALLATION PROCESS
-## Frontend
-* Create your folder using the command `git clone your ssh or https keys`
-* Navigate to the code challenge directory using `cd wk2 code challenge`
-* copy the path to `index.html` and open it in the browser on a new tab
+## Getting Started
 
+To get started with the Movie Ticket Booking App, follow these steps:
 
-## Backend
-* Install the json-server using the command `npm install -g json-server`
-* To get backend started run this command `json-server --watch db.json`
-* Test your server by visting this route in the browser `http://localhost:3000/characters`
+1. Clone the repository or download the JavaScript file to your local machine.
+2. Host the JSON file containing movie data on a web server (e.g., http://localhost:3000/films).
+3. Open the JavaScript file (e.g., `movie-ticket-booking.js`) in a text editor.
+4. Update the `fetch` URLs in the code to point to your hosted JSON file.
+5. Save the changes to the JavaScript file.
 
-# TECHNOLOGY USED
-Html
-css
-Javascript
+## Usage
 
+To use the Movie Ticket Booking App, follow these steps:
 
-# LICENCE
-MIT licence
+1. Open the HTML file that includes the JavaScript code in a web browser.
+2. The app will fetch movie data from the JSON file and display a list of movies.
+3. Click on a movie title in the list to view its details (poster, title, runtime, showtime, and available tickets).
+4. If tickets are available for the selected movie, click the "Buy Ticket" button to purchase a ticket.
+5. The available ticket count will be updated, and if all tickets are sold out, the button will change to "Sold Out" and the movie will be marked as sold out in the list.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Acknowledgments
+
+- This project was created as a demonstration of JavaScript and DOM manipulation.
+- It utilizes Fetch API to retrieve movie data from a JSON file.
+- The code structure and functionality are based on a movie ticket booking system.
 
 # AUTHORS INFO
 Ian Imbuki
