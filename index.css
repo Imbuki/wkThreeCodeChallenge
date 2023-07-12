@@ -1,18 +1,36 @@
-body{
-    background-color: darkgrey;
-}
-#filmlist{
-    display: none;
-}
-
-#details{
-    font-size: 20px;
-}
-
-#image{
-    width: 400px;
-}
-
-#menu:hover{
-    color: brown;
-}
+.movie-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .movie-details img {
+    max-width: 200px;
+    margin-bottom: 10px;
+  }
+  
+  #films {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #films li {
+    cursor: pointer;
+    padding: 5px;
+    background-color: lightgray;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  
+  #films li.sold-out {
+    background-color: gray;
+    color: white;
+  }
+  
+  #buy-ticket {
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+  }
+  

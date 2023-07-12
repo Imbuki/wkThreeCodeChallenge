@@ -3,35 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flatdango</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
 </head>
 <body>
-    <!--heading-->
-    <h1>Flatiron Movie Theater</h1>
-    <div>
-    <div>
-        <label id="menu">MENU</label>
-    </div>
-    <div>
-        <ul id="filmlist"></ul>
-    </div>
-    <!--section for the details of the movie-->
-    <div id="section">
-        <div id="headers" >
-            <h3></h3>
+        <div class="movie-details">
+          <img id="movie-poster" src="" alt="Movie Poster">
+          <h2 id="movie-title"></h2>
+          <p id="movie-runtime"></p>
+          <p id="movie-showtime"></p>
+          <p id="movie-available-tickets"></p>
+          <button id="buy-ticket">Buy Ticket</button>
         </div>
-        <div id="details">
-            <span id="runtime"></span><br>
-            <span id="showtime"></span><br>
-            <span id="availabletickets"></span><br>
-            <div id="mybutton"></div><br>
-            <p id="description"></p>
-            <img alt="" id="image">
-        </div>
-    </div>
-    </div>
-    <!--linking the html file with the js file-->
-    <script src="index.js"></script>
+      
+        <ul id="films"></ul>
+      
+        <script src="./script.js"></script>
 </body>
 </html>
